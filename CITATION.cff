@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Operationistic Grasslands: A Radical-Remainder Quotient Structure on ℕ"
+abstract: >-
+  A Lean 4 / Mathlib4 formalization of Operationistic Grasslands, a family of
+  algebraic structures on the natural numbers built from idempotent arithmetic
+  projections, with the radical remainder r_n(a) = a - floor(a^(1/n))^n as the
+  canonical projection.
+type: software
+authors:
+  - family-names: Sgarbi
+    given-names: Alessandro
+    orcid: "https://orcid.org/0009-0005-4528-964X"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/melchisedekko/OPERATIONISTIC-GRASSLANDS"
+keywords:
+  - Lean 4
+  - Mathlib
+  - formal verification
+  - number theory
+  - radical remainder
+  - operationistic grasslands

@@ -1,0 +1,22 @@
+{
+  "title": "Operationistic Grasslands: A Radical-Remainder Quotient Structure on ℕ",
+  "description": "A Lean 4 / Mathlib4 formalization of Operationistic Grasslands, a family of algebraic structures on the natural numbers built from idempotent arithmetic projections, with the radical remainder r_n(a) = a - floor(a^(1/n))^n as the canonical projection. The development covers the per-chapter ring/field structure, the inter-chapter translation geometry (First Jump Theorem, Capitolar Groupoid, Universal Tiling Decomposition), the global grassland / flat-limit deformation theory (Keystone and Synchronization theorems), the infinite radical profile structure Aod-infinity and the Tower Separation Theorem, and the universal radical quotient Aod-star. Fully verified in Lean except for two intentionally documented sorries (the Hardy-Wright weak-zero density and the Catalan-Mihailescu constraint, the latter awaiting a Mathlib4 port).",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Sgarbi, Alessandro",
+      "orcid": "0009-0005-4528-964X"
+    }
+  ],
+  "keywords": [
+    "Lean 4",
+    "Mathlib",
+    "formal verification",
+    "number theory",
+    "radical remainder",
+    "operationistic grasslands",
+    "perfect powers",
+    "modular arithmetic"
+  ],
+  "license": "GPL-3.0-or-later"
+}

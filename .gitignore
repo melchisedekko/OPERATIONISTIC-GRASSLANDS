@@ -1,0 +1,12 @@
+# Lean / Lake build artifacts and downloaded dependencies (Mathlib cache).
+# These are large (several GB) and reproducible from lake-manifest.json — never commit them.
+/.lake/
+/build/
+
+# Local helper logs
+_robocopy_lake.log
+
+# Editor / OS
+*.olean
+.DS_Store
+Thumbs.db
