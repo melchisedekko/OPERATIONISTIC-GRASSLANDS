@@ -1,5 +1,7 @@
 # Operationistic Grasslands
 
+[![DOI](https://zenodo.org/badge/1255423483.svg)](https://doi.org/10.5281/zenodo.20938521)
+
 **A Radical-Remainder Quotient Structure on ℕ — formally verified in Lean 4 / Mathlib4**
 
 This repository contains the complete Lean 4 formalization accompanying the paper
@@ -141,6 +143,14 @@ If you use this formalization, please cite it via [`CITATION.cff`](CITATION.cff)
 > Sgarbi, Alessandro
 > ([ORCID 0009-0005-4528-964X](https://orcid.org/0009-0005-4528-964X)).
 > *Operationistic Grasslands: A Radical-Remainder Quotient Structure on ℕ.*
+> Zenodo. [https://doi.org/10.5281/zenodo.20938521](https://doi.org/10.5281/zenodo.20938521)
+
+This work is archived on Zenodo with two DOIs:
+
+- **Concept DOI** (always resolves to the latest version) —
+  [`10.5281/zenodo.20938521`](https://doi.org/10.5281/zenodo.20938521)
+- **Version DOI** (this release, `v1.0.0`) —
+  [`10.5281/zenodo.20938522`](https://doi.org/10.5281/zenodo.20938522)
 
 ---
 
