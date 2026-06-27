@@ -12,8 +12,8 @@ authors:
     given-names: Alessandro
     orcid: "https://orcid.org/0009-0005-4528-964X"
 license: GPL-3.0-or-later
-version: v1.0.0
-date-released: 2026-06-26
+version: v1.0.1
+date-released: 2026-06-27
 doi: 10.5281/zenodo.20938521
 repository-code: "https://github.com/melchisedekko/OPERATIONISTIC-GRASSLANDS"
 keywords:
