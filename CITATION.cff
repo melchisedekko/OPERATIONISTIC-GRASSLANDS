@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Operationistic Grasslands: A Radical-Remainder Quotient Structure on ℕ"
+title: "Operationistic Grasslands: A Framework for Radical-Remainder Quotients on ℕ"
 abstract: >-
   A Lean 4 / Mathlib4 formalization of Operationistic Grasslands, a family of
   algebraic structures on the natural numbers built from idempotent arithmetic
