@@ -23,3 +23,12 @@ keywords:
   - number theory
   - radical remainder
   - operationistic grasslands
+references:
+  - type: article
+    title: "Operationistic Grasslands: A Framework for Radical-Remainder Quotients on ℕ"
+    authors:
+      - family-names: Sgarbi
+        given-names: Alessandro
+        orcid: "https://orcid.org/0009-0005-4528-964X"
+    doi: 10.5281/zenodo.20963134
+    year: 2026

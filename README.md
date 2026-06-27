@@ -5,7 +5,8 @@
 **A Framework for Radical-Remainder Quotients on ℕ — formally verified in Lean 4 / Mathlib4**
 
 This repository contains the complete Lean 4 formalization accompanying the paper
-*Operationistic Grasslands: A Framework for Radical-Remainder Quotients on ℕ*.
+[*Operationistic Grasslands: A Framework for Radical-Remainder Quotients on ℕ*](https://doi.org/10.5281/zenodo.20963134)
+(Zenodo, [`10.5281/zenodo.20963134`](https://doi.org/10.5281/zenodo.20963134)).
 
 ---
 
@@ -151,6 +152,18 @@ This work is archived on Zenodo with two DOIs:
   [`10.5281/zenodo.20938521`](https://doi.org/10.5281/zenodo.20938521)
 - **Version DOI** (this release, `v1.0.0`) —
   [`10.5281/zenodo.20938522`](https://doi.org/10.5281/zenodo.20938522)
+
+### Companion paper
+
+The accompanying paper (text/preprint) is archived as a **separate** Zenodo record:
+
+> Sgarbi, Alessandro. *Operationistic Grasslands: A Framework for
+> Radical-Remainder Quotients on ℕ.* Zenodo, 2026.
+
+- **Paper concept DOI** (always latest) —
+  [`10.5281/zenodo.20963134`](https://doi.org/10.5281/zenodo.20963134)
+- **Paper version DOI** (`v1.0.0`) —
+  [`10.5281/zenodo.20963135`](https://doi.org/10.5281/zenodo.20963135)
 
 ---
 

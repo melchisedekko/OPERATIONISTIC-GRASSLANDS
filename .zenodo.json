@@ -18,5 +18,13 @@
     "perfect powers",
     "modular arithmetic"
   ],
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.20963134",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    }
+  ]
 }
