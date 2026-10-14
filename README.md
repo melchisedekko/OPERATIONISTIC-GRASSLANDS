@@ -184,8 +184,8 @@ This work is archived on Zenodo with two DOIs:
   [`10.5281/zenodo.20938522`](https://doi.org/10.5281/zenodo.20938522)
 - **Version DOI** (`v1.0.1`) —
   [`10.5281/zenodo.20963996`](https://doi.org/10.5281/zenodo.20963996)
-- **Version DOI** (`v1.1.0`) — minted by Zenodo from the GitHub release `v1.1.0`.
-  Until that archive is up, the concept DOI is the citation.
+- **Version DOI** (`v1.1.0`) —
+  [`10.5281/zenodo.23376951`](https://doi.org/10.5281/zenodo.23376951)
 
 ### Companion paper
 
