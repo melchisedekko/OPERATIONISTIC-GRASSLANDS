@@ -14,9 +14,9 @@ This repository contains the complete Lean 4 formalization accompanying the pape
 
 An *Operationistic Grassland* is a family of algebraic structures on the natural
 numbers ℕ built from idempotent arithmetic projections `φ : ℕ → ℕ`, of which
-classical modular arithmetic is the degenerate flat case. The central subclass —
-the *Radical Grasslands* (Italian: *Campi Operazionistici*), indexed by a degree
-`n ≥ 2` — uses the **radical remainder**
+classical modular arithmetic is the degenerate flat case. *Campi Operazionistici*
+is the earlier Italian name of this framework. The central subclass — the
+*Radical Grasslands*, indexed by a degree `n ≥ 2` — uses the **radical remainder**
 
 ```
 rₙ(a) := a − ⌊a^(1/n)⌋ⁿ
@@ -41,15 +41,24 @@ The theory rests on three pillars:
 ## Repository Layout
 
 ```
-CampiOperazionistici.lean        Root module (re-exports every module below)
+CampiOperazionistici.lean        Root of the frozen library (19 modules)
+Grasslands.lean                  General operationistic grasslands (v1.1.0)
+Reencounters.lean                Power-remainder translations (v1.1.0)
 Main.lean                        Trivial executable entry point
 lakefile.lean                    Lake package definition
 lean-toolchain                   Pinned Lean version (v4.29.0-rc2)
 lake-manifest.json               Pinned Mathlib + dependency revisions
-CampiOperazionistici/            Library source (19 modules)
+CampiOperazionistici/            Frozen library
+Grasslands/                      General grasslands
+Reencounters/                    Translations in the power-remainder quotient
+experiments/                     Numerical checks cited by the notes
 ```
 
-### Modules (dependency order)
+`Grasslands/` accompanies the note *Remainder Quotients of Interval Partitions of ℕ*.
+`Reencounters/` accompanies the note *Translations in the Quotient by the n-th Power Remainder*.
+The scripts those notes cite are under `experiments/`.
+
+### Frozen library (dependency order)
 
 | # | Module | Contents |
 |---|--------|----------|
@@ -72,6 +81,26 @@ CampiOperazionistici/            Library source (19 modules)
 | 17 | `AodStar.lean` | Universal Radical Quotient Aod★ via max perfect power `mpp` |
 | 18 | `AodStarAlgebra.lean` | Radical Star Algebra: impossibility theorem + commutative magma |
 | 19 | `AodStarTree.lean` | Radical Star Tree: tree metric on ℕ, LCA and sibling-distance theorems |
+
+### `Grasslands/` (v1.1.0)
+
+| Module | Contents |
+|---|---|
+| `Dictionary.lean` | Point dictionary for an arbitrary gap sequence; finiteness when the gaps tend to infinity |
+| `Symmetry.lean` | Which translations preserve the equivalence |
+| `SymmetryTail.lean` | Translation symmetries of an eventually flat grassland, for shifts at least the flat tail |
+| `Rigidity.lean` | Rigid grasslands are those whose bases form a Sidon set |
+| `Instances.lean` | Mersenne is rigid; the Fibonacci grassland meets again at index distance 2 |
+
+### `Reencounters/` (v1.1.0)
+
+| Module | Contents |
+|---|---|
+| `Dictionary.lean` | Point dictionary, width bound, eventual separation, finiteness |
+| `Count.lean` | Exact reencounter count; every pair meets again only finitely often |
+| `SquareCase.lean` | For squares, a later meeting exists if and only if `h − k ≥ 3` |
+| `Proportion.lean` | The proportion of square pairs at distance at most `X` that meet again tends to 1 |
+| `Infinitude.lean` | Infinite forward families for cubes and fourth powers |
 
 ---
 
@@ -124,16 +153,17 @@ lake env lean CampiOperazionistici/CampiOperazionistici.lean
 
 ## Formalization Status
 
-All results marked with the symbol **`✓ (lv)`** in the paper are machine-checked.
-The codebase contains only **two** intentional `sorry`s, each a classical or deep
-result left open by design:
+All results marked with the symbol **`✓ (lv)`** in the monograph are machine-checked.
+The frozen library `CampiOperazionistici` contains **two** intentional `sorry`s,
+each a classical or deep result left open by design:
 
 - `weakZero_count_asymptotic` (Aod∞) — asymptotic density of weak zeros `~ √N`
   (classical; Hardy–Wright §18.1).
 - `catalan_in_AodStar` (Aod★) — the only consecutive perfect powers `≥ 2` are 8
   and 9 (Catalan–Mihăilescu), awaiting a Mathlib4 port.
 
-Every other module is fully proved.
+Every other module of that library is fully proved. `Grasslands` and `Reencounters`
+contain no `sorry`.
 
 ---
 
@@ -150,8 +180,12 @@ This work is archived on Zenodo with two DOIs:
 
 - **Concept DOI** (always resolves to the latest version) —
   [`10.5281/zenodo.20938521`](https://doi.org/10.5281/zenodo.20938521)
-- **Version DOI** (this release, `v1.0.0`) —
+- **Version DOI** (`v1.0.0`) —
   [`10.5281/zenodo.20938522`](https://doi.org/10.5281/zenodo.20938522)
+- **Version DOI** (`v1.0.1`) —
+  [`10.5281/zenodo.20963996`](https://doi.org/10.5281/zenodo.20963996)
+- **Version DOI** (`v1.1.0`) — minted by Zenodo from the GitHub release `v1.1.0`.
+  Until that archive is up, the concept DOI is the citation.
 
 ### Companion paper
 
